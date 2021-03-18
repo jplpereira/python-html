@@ -1,0 +1,14 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Olá, {{ user.username }}!</h1>
+        <div>
+            {% for post in posts %}
+            <p>{{ post.author.username }}: <strong>{{ post.body }}</strong></p>
+            {% else %}
+            <p>Sorry, there are no posts available!</p>
+            {% endfor %}
+        </div>
+    </body>
+</html>
